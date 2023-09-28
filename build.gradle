@@ -7,10 +7,10 @@ buildscript {
         // Add other repositories as needed
     }
     dependencies {
-
-        classpath 'com.android.tools.build:gradle:7.0.0' // Use the latest version if available
-        // Add other dependencies as needed
-    }
+//
+//        classpath 'com.android.tools.build:gradle:7.0.0' // Use the latest version if available
+//        // Add other dependencies as needed
+//    }
 
 }
 
