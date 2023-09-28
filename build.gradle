@@ -2,6 +2,7 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
     repositories {
+        mavenCentral()
         google() // Add this repository for Android Gradle Plugin
         // Add other repositories as needed
     }
@@ -18,7 +19,20 @@ buildscript {
 
 plugins {
     id 'java-library'
-
+    id 'maven-publish'
     id 'com.android.application' version '8.0.0' apply false
     id 'com.android.library' version '8.0.0' apply false
 }
+//afterEvaluate{
+//    publishing{
+//        publications{
+//            release(MavenPublication){
+//                from components.release
+//
+//                groubId='com.github.Rahees-16'
+//                artifactId='Calculator-library'
+//                version='1.0'
+//            }
+//        }
+//    }
+//}
